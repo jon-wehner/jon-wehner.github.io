@@ -1401,6 +1401,10 @@ ul.icons {
     ul.icons li {
       padding: 0 0.75em 0 0; } }
 
+.devicons {
+  font-size: 7rem;
+  padding-right: .4rem; }
+
 /* Pagination */
 ul.pagination {
   cursor: default;
