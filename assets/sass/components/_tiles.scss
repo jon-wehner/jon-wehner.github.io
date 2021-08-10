@@ -101,8 +101,10 @@
 				@include vendor('filter', 'blur(0.5em)');
 				opacity: 0;
 			}
-
-			&:nth-child(4n - 1),
+			// TODO: CHANGE THIS BACK TO 60% WHEN 4TH TILE IS ADDED
+			&:nth-child(4n - 1){
+				width: 100%;
+			}
 			&:nth-child(4n - 2) {
 				width: 60%;
 			}
