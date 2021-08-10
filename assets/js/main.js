@@ -282,6 +282,7 @@
 			.on('click', 'a', function(event) {
 
 				var href = $(this).attr('href');
+				const target = $(this).attr('target')
 
 				event.preventDefault();
 				event.stopPropagation();
@@ -291,7 +292,11 @@
 
 				// Redirect.
 					window.setTimeout(function() {
-						window.location.href = href;
+						if (target == '_blank') {
+							window.open(href)
+						} else {
+							window.location.href = href;
+						}
 					}, 250);
 
 			});
